@@ -4,13 +4,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.banner{
-    width: 100%;
+html, body{
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url('/photos/MainBackground.jpg');
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+.banner{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75));
     background-position: center;
     background-size: cover;
+}
+
+#backgroundVideo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: auto;
+    min-width: 100%;
+    min-height: 100vh;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 .navbar{
