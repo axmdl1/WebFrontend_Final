@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+.banner{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("materials/MainBackground.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    color: #787777;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar h2{
+    color: #fff;
+}
