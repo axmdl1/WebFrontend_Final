@@ -53,3 +53,27 @@
     padding: 50px 0;
     min-height: 100vh;
 }
+
+.btn-to-scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+}
+
+.btn-to-scroll button{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.btn-to-scroll button:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.5s ease;
+}
