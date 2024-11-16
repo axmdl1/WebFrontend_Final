@@ -6,7 +6,7 @@
 
 .banner{
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url("materials/MainBackground.jpg");
+    url("../materials/MainBackground.jpg");
     background-position: center;
     background-size: cover;
     padding: 35px 0;
@@ -44,10 +44,14 @@
     color: #fff;
 }
 
+.active{
+    font-weight: bold;
+}
+
 .elements{
     margin-bottom: 0;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-    url("materials/bg-photo2.jpg");
+    url("../materials/bg-photo2.jpg");
     background-position: center;
     background-size: cover;
     padding: 50px 0;

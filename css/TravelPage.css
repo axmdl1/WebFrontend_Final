@@ -1,0 +1,226 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    color: #6a6868;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar h2{
+    color: black;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.home{
+    padding: 100px 200px;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../materials/pexels-njeromin-29376558.jpg") center;
+    background-size: cover;
+}
+
+.home .content{
+    z-index: 888;
+    color: #fff;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.home .content h1{
+    font-size: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.home .content h1 span{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.home .content a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.home .content p{
+    margin-bottom: 60px;
+}
+
+.home .content a:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.5s ease;
+}
+
+.home .content .switzerland{
+    position: relative;
+    width: 100%;
+}
+
+.home .content .switzerland img{
+    height: 400px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.home .content .switzerland h2{
+    font-size: 50px;
+    color: red;
+}
+
+.home .content .switzerland p{
+    font-size: 25px;
+    text-align: left;
+    margin-top: 10px;
+    background-image: linear-gradient(#fff, #f40f0f);
+    color: transparent;
+    background-clip: text;
+}
+
+.home .content .monaco{
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.home .content .monaco img{
+    height: 400px;
+    width: 600px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.home .content .monaco h2{
+    font-size: 50px;
+    background-image: linear-gradient(#f40f0f, #fff);
+    color: transparent;
+    background-clip: text;
+}
+
+.home .content .monaco p{
+    font-size: 25px;
+    text-align: left;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.booking{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#2888a1, #738f97, #e7e7e7);
+    background-size: cover;
+}
+
+.booking .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: #6a6868 solid 2px;
+    border-radius: 10px;
+    box-shadow: #6a6868 2px 2px 2px;
+    width: 600px;
+    height: 600px;
+    margin-top: 7%;
+    background: #738f97;
+}
+
+.booking .container .from{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.booking .container .from h3{
+    font-size: 50px;
+    background-image: linear-gradient(#202426, #2888a1);
+    color: transparent;
+    background-clip: text;
+}
+
+.booking .container .from h4{
+    font-size: 30px;
+}
+
+.booking .container .placeholder{
+    margin-left: 10px;
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 6px;
+    background: #212529;
+    color: #fff;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.booking .container .btn{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.booking .container .btn:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.5s ease;
+}

@@ -61,6 +61,10 @@ html, body{
     color: #fff;
 }
 
+.active{
+    font-weight: bold;
+}
+
 .explore-more{
     width: 100%;
     height: 100vh;
