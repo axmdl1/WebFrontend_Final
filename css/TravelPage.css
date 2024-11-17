@@ -1,16 +1,144 @@
-*{
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+    --primary-color: #0a1e27;
+    --secondary-color: #e9c675;
+    --text-light: #cbd5e1;
+    --white: #ffffff;
+    --max-width: 1200px;
+    --header-font: "Playfair Display", serif;
 }
 
-.banner{
-    z-index: 999;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__subheader {
+    position: relative;
+    isolation: isolate;
+    margin-bottom: 1rem;
+    padding-left: 5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--secondary-color);
+}
+
+.section__subheader::before {
     position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 2px;
+    width: 4rem;
+    background-color: var(--secondary-color);
+}
+
+.section__subheader::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-60%, -50%);
+    font-size: 8rem;
+    font-weight: 600;
+    color: var(--white);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.section__header {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: var(--header-font), serif;
+    color: var(--white);
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: transparent;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(10, 30, 39, 0.5);
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--header-font), serif;
+    color: var(--white);
+}
+
+img {
+    display: flex;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+}
+
+.header::before {
+    position: absolute;
+    content: "";
     top: 0;
     left: 0;
     width: 100%;
+    height: calc(100% + 15rem);
+    background-image: radial-gradient(
+            rgba(255, 255, 255, 0),
+            var(--primary-color)
+    ),
+    url("/materials/pexels-njeromin-29376558.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
+
+nav {
+    position: relative;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    z-index: 9;
+}
+
 
 .navbar{
     width: 85%;
@@ -29,130 +157,115 @@
 
 .navbar ul li a{
     text-decoration: none;
-    color: black;
+    color: #fff;
     text-transform: uppercase;
 }
 
 .navbar ul li a:hover{
-    color: #6a6868;
+    color: #787777;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .navbar h2{
-    color: black;
+    color: #fff;
 }
 
 .active{
     font-weight: bold;
 }
 
-.home{
-    padding: 100px 200px;
+.header__container {
     position: relative;
-    width: 100%;
-    min-height: 100vh;
+    isolation: isolate;
+    height: calc(100% - 75px);
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background: url("../materials/pexels-njeromin-29376558.jpg") center;
-    background-size: cover;
 }
 
-.home .content{
-    z-index: 888;
-    color: #fff;
-    width: 70%;
-    margin-top: 50px;
+.header__content {
+    max-width: 700px;
 }
 
-.home .content h1{
-    font-size: 60px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    line-height: 75px;
-    margin-bottom: 40px;
+.header__content .section__header {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 5rem;
 }
 
-.home .content h1 span{
-    font-size: 50px;
-    font-weight: 800;
+.header__content a {
+    color: var(--white);
 }
 
-.home .content a{
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #fff;
-    padding: 15px 25px;
-    border-radius: 50px;
-    background-color: transparent;
+.header__content a:hover {
+    color: var(--secondary-color);
 }
 
-.home .content p{
-    margin-bottom: 60px;
+.about {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            var(--primary-color) 8rem
+    );
+    overflow: hidden;
 }
 
-.home .content a:hover{
-    background-color: #fff;
-    color: black;
-    transition: 0.5s ease;
+.about__container {
+    padding-top: 0;
+    display: grid;
+    gap: 5rem 2rem;
+    overflow: hidden;
 }
 
-.home .content .switzerland{
-    position: relative;
-    width: 100%;
+@media(width > 768px){
+    .about__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 10rem 2rem;
+    }
 }
 
-.home .content .switzerland img{
+.about__image img {
+    max-width: 400px;
     height: 400px;
-    width: 600px;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-inline: auto;
     border-radius: 5px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
 }
 
-.home .content .switzerland h2{
-    font-size: 50px;
-    color: red;
+@media (width > 768px) {
+    .about__image-1 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
 }
 
-.home .content .switzerland p{
-    font-size: 25px;
-    text-align: left;
-    margin-top: 10px;
-    background-image: linear-gradient(#fff, #f40f0f);
-    color: transparent;
-    background-clip: text;
+.about__content-1 .section__subheader::after {
+    content: "01";
 }
 
-.home .content .monaco{
-    margin-top: 50px;
-    position: relative;
-    width: 100%;
+.about__content-2 .section__subheader::after {
+    content: "02";
 }
 
-.home .content .monaco img{
-    height: 400px;
-    width: 600px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+.about__content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-light);
 }
 
-.home .content .monaco h2{
-    font-size: 50px;
-    background-image: linear-gradient(#f40f0f, #fff);
-    color: transparent;
-    background-clip: text;
+.about__content a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-color);
 }
 
-.home .content .monaco p{
-    font-size: 25px;
-    text-align: left;
-    margin-top: 10px;
-    color: #fff;
+.about__content a span {
+    transition: 0.3s;
+}
+
+.about__content a:hover span {
+    transform: translateX(10px);
 }
 
 .booking{
@@ -161,7 +274,7 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(#2888a1, #738f97, #e7e7e7);
+    background: var(--primary-color);
     background-size: cover;
 }
 
@@ -193,6 +306,7 @@
 
 .booking .container .from h4{
     font-size: 30px;
+    color: var(--secondary-color);
 }
 
 .booking .container .placeholder{
@@ -201,14 +315,14 @@
     width: 300px;
     border: none;
     border-radius: 6px;
-    background: #212529;
-    color: #fff;
+    background: var(--white);
+    color: var(--primary-color);
     margin-top: 10px;
     padding: 0 10px;
     font-size: 16px;
 }
 
-.booking .container .btn{
+.booking .container .findBtn{
     margin-top: 20px;
     font-size: 20px;
     color: #fff;
@@ -219,7 +333,7 @@
     background-color: transparent;
 }
 
-.booking .container .btn:hover{
+.booking .container .findBtn:hover{
     background-color: #fff;
     color: black;
     transition: 0.5s ease;
