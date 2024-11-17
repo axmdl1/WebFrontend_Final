@@ -3,8 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
+    <link rel="stylesheet" href="/css/AboutUsPage.css">
+    <!--AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <!--Social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--OPTIONAL ICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
+    <header class="banner">
+        <nav class="navbar">
+            <h2>Luxury Lifestyle</h2>
+            <ul id="nav-links">
+                <li><a href="LuxuryLifestyle.html">Home</a></li>
+                <li><a href="LuxuryGoods.html">Luxury Goods</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Experiences.html">Experiences</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="AboutUsPage">
+        <div class="content">
+            <div class="Akhmedali">
+                <img src="/materials/AkhmedaliPhoto.jpg" class="photo">
+                <h2>Akhmedali Duisembaiuly</h2>
+                <p>
+                    Astana IT University Student, multi-millionaire. 18 years old!
+                    Founder, CEO of Luxury Lifestyle!
+                </p>
+            </div>
+            <div class="Yestay">
+                <img src="/materials/YestayPhoto.jpg" class="photo">
+                <h2>Taganov Yestay</h2>
+                <p>
+                    Astana IT University Student, multi-millionaire. 19 years old!
+                    CEO of Luxury Lifestyle!
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <span class="big-circle"></span>
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="title">Let's get in touch</h3>
+                    <p class="text">
+                        Here's our contact information.
+                    </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <img src="/materials/location.png" class="icon" alt="" />
+                            <p>Mangilik el C1 Expo, Astana Kazakhstan</p>
+                        </div>
+                        <div class="information">
+                            <img src="/materials/mail.png" class="icon" alt="" />
+                            <p>230404@astanait.edu.kz</p>
+                        </div>
+                        <div class="information">
+                            <img src="/materials/mail.png" class="icon" alt="" />
+                            <p>230177@astanait.edu.kz</p>
+                        </div>
+                        <div class="information">
+                            <img src="/materials/telephone.png" class="icon" alt="" />
+                            <p>+7-777-662-6777</p>
+                        </div>
+                        <div class="information">
+                            <img src="/materials/telephone.png" class="icon" alt="" />
+                            <p>+7-777-881-96-64</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Connect with us :</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/axmdl1/WebFrontend_Final">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/axmdl1/">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_adam_bolmaisyn/">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+
+                    <form action="About.html" autocomplete="off">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                            <input type="text" name="name" class="input" />
+                            <label>Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input" />
+                            <label>Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input" />
+                            <label>Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label>Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quiz">
+        <h2>QUIZ</h2>
+        <p>Test your knowledge!</p>
+
+        <div id="quiz">
+
+        </div>
+
+        <button class="button" id="submit">Submit</button>
+
+        <div id="result">
+            <h4>Your score: <span id="score"></span> out of 9</h4>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Luxury Lifestyle. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/js/AboutUsPage.js"></script>
 </body>
 </html>
