@@ -6,7 +6,9 @@ document.getElementById('findBtn').addEventListener('click', () => {
         window.alert("Please fill in both fields!")
     }
 
-    window.alert("Searching tickets for you!")
+    if (from && destination) {
+        window.alert("Searching tickets for you!")
+    }
 })
 
 const scrollRevealOption = {
