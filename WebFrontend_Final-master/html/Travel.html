@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxury Travel</title>
+    <link rel="stylesheet" href="../css/TravelPage.css">
+    <!--AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <!--Social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header" id="home">
+        <nav class="navbar">
+            <h2>Luxury Lifestyle</h2>
+            <ul id="nav-links">
+                <li><a href="LuxuryLifestyle.html">Home</a></li>
+                <li><a href="LuxuryGoods.html">Luxury Goods</a></li>
+                <li><a href="Travel.html" class="active">Travel</a></li>
+                <li><a href="Experiences.html">Experiences</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="section__container header__container">
+            <div class="header__content">
+                <h3 class="section__subheader">Luxury Travel</h3>
+                <h1 class="section__header">
+                    Look for best luxury travel
+                </h1>
+                <div class="scroll__btn">
+                    <a href="#about">
+                        Scroll down
+                        <span><i class="ri-arrow-down-line"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="section__container about__container">
+            <div class="about__image about__image-1" id="about">
+                <img src="../materials/switzerland.jpg" alt="switzerland"/>
+            </div>
+            <div class="about__content about__content-1">
+                <h3 class="section__subheader">Switzerland</h3>
+                <h2 class="section__header">Beauty of Swiss Alps</h2>
+                <p>
+                    Switzerland is the perfect destination for those who love luxury and elegance.
+                    With its breathtaking landscapes, world-class services, and unmatched sophistication, it offers
+                    everything a traveler could dream of. The country is famous for its exquisite Swiss watches and
+                    jewelry, with brands like Rolex and Patek Philippe offering tours of their workshops.
+                </p>
+                <div class="about__btn">
+                    <a href="https://www.britannica.com/place/Switzerland" target="_blank">
+                        Read more
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="about__image about__image-2" id="equipment">
+                <img src="../materials/monaco.jpg" alt="monaco" />
+            </div>
+            <div class="about__content about__content-2">
+                <h3 class="section__subheader">MONACO</h3>
+                <h2 class="section__header">The reach city</h2>
+                <p>
+                    Monaco is a dream destination for luxury lovers. Known for its glamorous lifestyle, this tiny
+                    principality offers stunning views of the Mediterranean, luxurious hotels, and high-end shopping.
+                    The famous Monte Carlo Casino, lavish yachts at Port Hercules, and the Formula 1 Grand Prix make
+                    it an exciting and elegant getaway. With its warm climate and world-class restaurants, Monaco is
+                    perfect for travelers seeking sophistication and exclusivity.
+                </p>
+                <div class="about__btn">
+                    <a href="https://www.britannica.com/place/Monaco" target="_blank">
+                        Read more
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking">
+        <div class="container">
+            <table>
+                <td class="from">
+                    <h3>Booking tickets for travel!</h3>
+                    <h4>From: </h4>
+                    <label>
+                        <input type="text" placeholder="Enter place from" class="placeholder" id="from">
+                    </label>
+
+                    <h4>Destination: </h4>
+                    <label>
+                        <input type="text" placeholder="Enter destination" class="placeholder" id="destination">
+                    </label>
+                </td>
+            </table>
+
+            <button class="findBtn" id="findBtn">Find</button>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../js/TravelPage.js"></script>
+</body>
+</html>

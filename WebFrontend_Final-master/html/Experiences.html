@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luxury Experiences</title>
+    <link rel="stylesheet" href="../css/ExperiencesPage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--AOS-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <!--Social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--OPTIONAL ICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="banner">
+        <nav class="navbar">
+            <h2>Luxury Lifestyle</h2>
+            <ul id="nav-links">
+                <li><a href="LuxuryLifestyle.html">Home</a></li>
+                <li><a href="LuxuryGoods.html">Luxury Goods</a></li>
+                <li><a href="Travel.html">Travel</a></li>
+                <li><a href="Experiences.html" class="active">Experiences</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container my-5" id="container">
+        <h2>Unforgettable Experiences</h2>
+        <p>Discover the world's most luxurious experiences that will take your lifestyle to the next level.</p>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="../materials/luxury-resort.jpg" class="card-img-top" alt="Luxury Resort">
+                    <div class="card-body">
+                        <h5 class="card-title">Private Island Getaways</h5>
+                        <p class="card-text">Escape to your own private island with unparalleled luxury and service.</p>
+                        <button class="btn btn-primary book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="../materials/luxury-trip.jpg" class="card-img-top" alt="Luxury Trip">
+                    <div class="card-body">
+                        <h5 class="card-title">Around the World Cruise</h5>
+                        <p class="card-text">Indulge in an extravagant world cruise with all-inclusive experiences.</p>
+                        <button class="btn btn-primary book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="card mb-4">
+                    <img src="../materials/luxury-experiences.jpg" class="card-img-top" alt="Luxury Experience">
+                    <div class="card-body">
+                        <h5 class="card-title">Charity Dinner</h5>
+                        <p class="card-text">Attend charity dinners. Meet new friends and Luxury people like you!</p>
+                        <button class="btn btn-primary book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="booking-panel" class="alert alert-success alert-dismissible fade d-none" role="alert">
+            <strong>Booking was successful!</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Luxury Lifestyle. All Rights Reserved.</p>
+    </footer>
+    <script>
+        const bookButtons = document.querySelectorAll('.book-btn');
+        const bookingPanel = document.getElementById('booking-panel');
+
+        bookButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                bookingPanel.classList.remove('d-none');
+                bookingPanel.classList.add('show');
+
+                setTimeout(() => {
+                    bookingPanel.classList.remove('show');
+                    bookingPanel.classList.add('d-none');
+                }, 3000);
+            });
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

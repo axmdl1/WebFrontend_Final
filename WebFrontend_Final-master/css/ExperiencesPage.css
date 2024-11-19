@@ -1,0 +1,59 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    background-color: #0a1e27;
+    background-position: center;
+    background-size: cover;
+    padding: 35px 0;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    color: #787777;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar h2{
+    color: #fff;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.footer p{
+    text-align: center;
+    align-items: center;
+}
+
+#booking-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1050;
+}

@@ -1,0 +1,83 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("../materials/MainBackground.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 35px 0;
+    min-height: 100vh;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+    color: #787777;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar h2{
+    color: #fff;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.elements{
+    margin-bottom: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("../materials/bg-photo2.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    min-height: 100vh;
+}
+
+.btn-to-scroll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+}
+
+.btn-to-scroll button{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.btn-to-scroll button:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.5s ease;
+}
